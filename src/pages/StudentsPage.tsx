@@ -50,7 +50,7 @@ const StudentsPage: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#26262c] mb-5">Students</h2>
             <div className="w-24 h-1 bg-[#4747d7] mx-auto mb-8"></div>
             <p className="text-[#76767f] max-w-4xl mx-auto text-lg leading-relaxed">
-              At Sacred Heart Secondary School, we believe in fostering an environment where students can take ownership of their learning,
+              At Amadlelo Aluhlaza Secondary School, we believe in fostering an environment where students can take ownership of their learning,
               develop curiosity, and feel empowered to reach their full potential. Our students are encouraged to explore their passions,
               challenge themselves academically, and grow as individuals.
             </p>

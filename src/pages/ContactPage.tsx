@@ -16,28 +16,28 @@ const ContactPage: React.FC = () => {
                   <MapPin className="w-6 h-6 text-[#4747d7] mt-1 mr-4" />
                   <div>
                     <h3 className="font-semibold text-[#26262c]">Address</h3>
-                    <p className="text-[#76767f]">Oakford Sacred Heart Secondary School,Osindisweni, Iqadi, 4340</p>
+                    <p className="text-[#76767f]">1073 Phila Myeni Avenue, Mkhondo, Piet Retief, 2380</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Phone className="w-6 h-6 text-[#4747d7] mt-1 mr-4" />
                   <div>
                     <h3 className="font-semibold text-[#26262c]">Phone</h3>
-                    <p className="text-[#76767f]">+27 - 78 629 9152</p>
+                    <p className="text-[#76767f]">0178262483</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Mail className="w-6 h-6 text-[#4747d7] mt-1 mr-4" />
                   <div>
                     <h3 className="font-semibold text-[#26262c]">Email</h3>
-                    <p className="text-[#76767f]">sacredhearthostel01@gmail.com</p>
+                    <p className="text-[#76767f]">Coming Soon</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8 rounded-xl overflow-hidden shadow-md h-64 w-full">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3468.9267126630275!2d31.011114581955876!3d-29.60581664697598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef71b003b7a062f%3A0x3f1f38839e2173c1!2sOakford%20Sacred%20Heart%20Secondary%20School!5e0!3m2!1sen!2sza!4v1764951514257!5m2!1sen!2sza"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3468.9267126630275!2d30.782!3d-26.588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef71b003b7a062f%3A0x3f1f38839e2173c1!2sAmadlelo%20Aluhlaza%20Secondary%20School!5e0!3m2!1sen!2sza!4v1764951514257!5m2!1sen!2sza"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

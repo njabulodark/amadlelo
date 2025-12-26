@@ -40,7 +40,7 @@ const SportsPage: React.FC = () => {
         <div className="container mx-auto px-6 sm:px-8 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#26262c] mb-6">Sacred Heart Secondary Sport Department</h2>
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#26262c] mb-6">Amadlelo Aluhlaza Secondary Sport Department</h2>
               <p className="text-[#76767f] font-bold">
                 Welcome to our dynamic sports department where physical, mental, and social well-being are at the heart of our program.
                 We believe in developing well-rounded individuals through sport and recreation.

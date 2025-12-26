@@ -5,12 +5,12 @@ export interface Teacher {
 }
 
 export const teachersData: Teacher[] = [
-  { id: 1, name: 'Mrs. Smith', subject: 'Mathematics' },
-  { id: 2, name: 'Mr. Johnson', subject: 'Science' },
-  { id: 3, name: 'Ms. Williams', subject: 'English' },
-  { id: 4, name: 'Mr. Brown', subject: 'History' },
-  { id: 5, name: 'Mrs. Davis', subject: 'Geography' },
-  { id: 6, name: 'Mr. Miller', subject: 'Physical Education' },
-  { id: 7, name: 'Ms. Wilson', subject: 'Art' },
-  { id: 8, name: 'Mr. Taylor', subject: 'Music' },
+  { id: 1, name: 'Mr. M Mthalane', subject: 'Music' },
+  { id: 2, name: 'Miss T Mngadi', subject: 'Mathematics' },
+  { id: 3, name: 'Ms NS Ndlovu', subject: 'Life Sciences' },
+  { id: 4, name: 'Miss NP Luthuli', subject: 'Physical Science' },
+  { id: 5, name: 'Miss T Mazibuko', subject: 'Tourism' },
+  { id: 6, name: 'Miss TL Mvubu', subject: 'IsiZulu' },
+  { id: 7, name: 'Miss TN Shozi', subject: 'Business Studies' },
+  { id: 8, name: 'Miss HP Ndlovu', subject: 'IsiZulu' },
 ];

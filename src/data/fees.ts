@@ -24,24 +24,24 @@ export interface FeesData {
 
 export const feesData: FeesData = {
   tuition: {
-    term1: 'R 12,500',
-    term2: 'R 12,500',
-    term3: 'R 12,500',
-    term4: 'R 12,500',
-    annual: 'R 50,000'
+    term1: 'R 0',
+    term2: 'R 0',
+    term3: 'R 0',
+    term4: 'R 0',
+    annual: 'R 0'
   },
   boarding: {
-    term1: 'R 15,000',
-    term2: 'R 15,000',
-    term3: 'R 15,000',
-    term4: 'R 15,000',
-    annual: 'R 60,000'
+    term1: 'R 1,750',
+    term2: 'R 1,750',
+    term3: 'R 1,750',
+    term4: 'R 1,750',
+    annual: 'R 7,000'
   },
   total: {
-    term1: 'R 27,500',
-    term2: 'R 27,500',
-    term3: 'R 27,500',
-    term4: 'R 27,500',
-    annual: 'R 110,000'
+    term1: 'R 1,750',
+    term2: 'R 1,750',
+    term3: 'R 1,750',
+    term4: 'R 1,750',
+    annual: 'R 7,000'
   }
 };

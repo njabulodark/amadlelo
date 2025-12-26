@@ -131,9 +131,8 @@ const FadeInWhenVisible: React.FC<{ children: React.ReactNode }> = ({ children }
   return (
     <div
       ref={ref}
-      className={`transition-all duration-700 ease-out transform ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      }`}
+      className={`transition-all duration-700 ease-out transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
     >
       {children}
     </div>
@@ -150,7 +149,7 @@ const HomePage: React.FC = () => {
           <div className="absolute inset-0 overflow-hidden">
             <ResponsiveImage
               src="/images/homepage/sacred.jpg"
-              alt="Sacred Heart Secondary School"
+              alt="Amadlelo Aluhlaza Secondary School"
               className="w-full h-full object-cover object-center"
               loading="lazy"
             />
@@ -160,11 +159,11 @@ const HomePage: React.FC = () => {
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up">
-                Sacred Heart Secondary School
+                Amadlelo Aluhlaza Secondary School
               </h1>
               <div className="w-24 h-1 bg-blue-500 mb-8 animate-grow-width"></div>
               <p className="text-xl text-blue-100 mb-10 max-w-2xl animate-fade-in-up animation-delay-200">
-                <span className="font-bold text-white">Unlock your child's potential</span> with world-class education at Sacred Heart Secondary School and Boarding Facility
+                <span className="font-bold text-white">Unlock your child's potential</span> with world-class education at Amadlelo Aluhlaza Secondary School
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animation-delay-400">
                 <Link
@@ -202,13 +201,13 @@ const HomePage: React.FC = () => {
                 <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100 transform transition duration-300 hover:scale-[1.02]">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Our Mission</h3>
                   <p className="text-gray-600">
-                    Our school's safe and supportive environment creates opportunities for each child to grow and learn through exploration. We believe in the power of passion and dedication to learning.
+                    Our school aims to give expression to knowledge and values worth learning in South Africa, ensuring children acquire skills meaningful to their own lives while promoting knowledge in local contexts and remaining sensitive to global imperatives.
                   </p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100 transform transition duration-300 hover:scale-[1.02]">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Our Vision</h3>
                   <p className="text-gray-600">
-                    Our programs are designed to meet the needs of each individual child. We provide an environment that encourages children to become confident and capable learners.
+                    Our programs are designed to meet the needs of each individual child. We provide an environment that encourages children to become confident and capable learners in the Ethandakukhanya area of Mkhondo, Piet Retief.
                   </p>
                 </div>
               </div>
@@ -216,7 +215,7 @@ const HomePage: React.FC = () => {
                 <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100 transform transition duration-300 hover:scale-[1.02]">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Excellence in Education</h3>
                   <p className="text-gray-600">
-                    Sacred Heart Secondary School is an early learning academy with a passion for social-emotional development, literacy, numeracy, and other foundational skills.
+                    Amadlelo Aluhlaza Secondary School is a public school that receives annual government funding as a no-fee school, serving the community with quality education.
                   </p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100 transform transition duration-300 hover:scale-[1.02]">
@@ -244,7 +243,7 @@ const HomePage: React.FC = () => {
       <FadeInWhenVisible>
         <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h6 className="text-center text-xl font-semibold mb-16 uppercase tracking-wider opacity-90">Sacred Heart Secondary School at a Glance</h6>
+            <h6 className="text-center text-xl font-semibold mb-16 uppercase tracking-wider opacity-90">Amadlelo Aluhlaza Secondary School at a Glance</h6>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 transform transition duration-300 hover:scale-105 hover:bg-white/20">
@@ -252,7 +251,7 @@ const HomePage: React.FC = () => {
                   <Users className="w-10 h-10 text-blue-200" />
                 </div>
                 <div className="text-4xl font-bold mb-2">
-                  <CountUp end={500} suffix="+" />
+                  <CountUp end={1409} suffix="+" />
                 </div>
                 <p className="text-blue-100 font-medium">Students</p>
               </div>
@@ -321,13 +320,13 @@ const HomePage: React.FC = () => {
                   "Education is not the learning of fact, but the training of the mind to think" - Albert Einstein
                 </p>
                 <p className="text-gray-700 mb-4 text-lg leading-relaxed">
-                  Education is a lifelong process and it begins at school. The purpose of education is to open up a closed mind. Every child here at Sacred Heart Secondary school is a unique individual. The staff at SHSS is committed to provide the students with quality education which shapes the children of today into leaders of tomorrow.
+                  Education is a lifelong process and it begins at school. The purpose of education is to open up a closed mind. Every child here at Amadlelo Aluhlaza Secondary School is a unique individual. Our staff is committed to providing the students with quality education which shapes the children of today into leaders of tomorrow.
                 </p>
                 <p className="text-gray-700 mb-4 text-lg leading-relaxed">
                   The school is striving hard to make the best possible effort to inculcate strong values combining with academics and extra-curricula activities. Converting every individual into a self-reliant and independent citizen.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  I feel proud to express that the school is performing extremely well in all aspect to ensure academic and human excellence with blessings from God. I pray to Almighty that our journey towards excellence continues……………
+                  I feel proud to express that our school is performing extremely well in all aspects to ensure academic and human excellence. Our school serves the settlement within the Ethandakukhanya area of Mkhondo, Piet Retief, and we continue our journey towards excellence……………
                 </p>
               </div>
             </div>
@@ -343,7 +342,7 @@ const HomePage: React.FC = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Curriculum Overview</h2>
               <div className="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Sacred Heart Secondary School offers a broad and balanced curriculum to meet the needs of each individual child. Our programs are designed to encourage children to become confident and capable learners.
+                Amadlelo Aluhlaza Secondary School offers a broad and balanced curriculum to meet the needs of each individual child. Our programs are designed to encourage children to become confident and capable learners.
               </p>
             </div>
 

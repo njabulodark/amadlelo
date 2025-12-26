@@ -42,12 +42,12 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
           <div className="flex justify-between items-center py-2">
             <div className="flex items-center">
               <img
-                src="https://sacredheartoakford.co.za/wp-content/uploads/2024/05/Screenshot_20231129_124531_WhatsApp-1-70x63.jpg"
-                alt="Sacred Heart Secondary School"
+                src="/images/logo.jpg"
+                alt="Amadlelo Aluhlaza Secondary School"
                 className="h-10 sm:h-12 w-auto mr-2"
               />
               <div>
-                <h1 className="text-lg sm:text-xl font-bold text-[#4747d7]">Sacred Heart</h1>
+                <h1 className="text-lg sm:text-xl font-bold text-[#4747d7]">Amadlelo Aluhlaza</h1>
                 <span className="hidden sm:block text-[#26262c] text-xs sm:text-sm font-light">Secondary School</span>
               </div>
             </div>
@@ -156,16 +156,16 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
         <div className="container mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h4 className="text-lg font-semibold mb-4">Sacred heart Secondary​</h4>
+              <h4 className="text-lg font-semibold mb-4">Amadlelo Aluhlaza Secondary​</h4>
               <p className="text-white">
-                Oakford Road, Redcliffe, Verulam, 4340
+                1073 Phila Myeni Avenue, Mkhondo, Piet Retief, 2380
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold mb-4">Main Office</h4>
               <p className="text-white mb-2">
-                +27 – 78 629 9152
+                0178262483
               </p>
               <p className="text-white">
                 7:30 a.m. – 14:30 p.m.
@@ -175,10 +175,10 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Attendance</h4>
               <p className="text-white mb-2">
-                +27 – 78 629 9152
+                0178262483
               </p>
               <p className="text-white">
-                sacredhearthostel01@gmail.com
+                Coming Soon
               </p>
             </div>
           </div>
@@ -191,7 +191,7 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
             <div className="mb-6 md:mb-0">
               <img
                 src="/images/logo.jpg"
-                alt="Sacred Heart Secondary School"
+                alt="Amadlelo Aluhlaza Secondary School"
                 className="h-16"
               />
             </div>
@@ -235,7 +235,7 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
           </div>
 
           <div className="border-t border-[#4747d7] mt-8 pt-6 text-center text-[#bfd1ff]">
-            <p>&copy; {new Date().getFullYear()} Sacred Heart Secondary School. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Amadlelo Aluhlaza Secondary School. All rights reserved.</p>
           </div>
         </div>
       </footer>

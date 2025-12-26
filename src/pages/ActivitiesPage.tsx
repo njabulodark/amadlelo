@@ -75,7 +75,7 @@ const ActivitiesPage: React.FC = () => {
               <h2 className="text-4xl font-serif font-bold text-blue-950 mb-6">Music</h2>
               <div className="w-12 h-1 bg-blue-200 mb-6"></div>
               <p className="text-slate-600 leading-8 mb-6 text-lg">
-                Sacred Heart is very proud to have <strong className="text-blue-900">Mr. Mthobisi Mthalane</strong> as our full-time music teacher.
+                Amadlelo Aluhlaza is very proud to have <strong className="text-blue-900">Mr. Mthobisi Mthalane</strong> as our full-time music teacher.
               </p>
               <p className="text-slate-500 leading-relaxed mb-8">
                 Mr. Mthalane brings world-class experience, having collaborated with high-profile artists such as Dorothy Masuku, Camagwini, and the Jazel brothers. His industry insight bridges the gap between academic theory and professional performance.

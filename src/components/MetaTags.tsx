@@ -11,13 +11,13 @@ interface MetaTagsProps {
 }
 
 const MetaTags: React.FC<MetaTagsProps> = ({
-    title = 'Sacred Heart Secondary School',
-    description = 'Sacred Heart Secondary School provides quality education with a focus on academic excellence, character development, and holistic growth for students.',
+    title = 'Amadlelo Aluhlaza Secondary School',
+    description = 'Amadlelo Aluhlaza Secondary School provides quality education with a focus on academic excellence, character development, and holistic growth for students.',
     image = '/images/homepage/sacred.jpg',
     url = '/',
     type = 'website',
     keywords = ['school', 'education', 'secondary school', 'south africa'],
-    author = 'Sacred Heart Secondary School'
+    author = 'Amadlelo Aluhlaza Secondary School'
 }) => {
     return (
         <>

@@ -11,7 +11,7 @@ const AdmissionsPage: React.FC = () => {
         <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
           <h2 className="text-2xl font-semibold text-[#26262c] mb-4">Entry Requirements</h2>
           <p className="text-[#76767f] mb-6">
-            Sacred Heart Secondary School welcomes applications from students who demonstrate academic potential
+            Amadlelo Aluhlaza Secondary School welcomes applications from students who demonstrate academic potential
             and a commitment to our values of excellence, integrity, and service.
           </p>
 

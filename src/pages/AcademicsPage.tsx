@@ -20,8 +20,8 @@ const AcademicsPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-[#76767f]">
-                <span className="float-left text-7xl font-bold text-[#26262c] mr-3 leading-none">S</span>
-                acred heart Secondary​ aims at offering all our students a broad and balanced curriculum that provides rewarding and stimulating activities to prepare them for the best social and cultural life.
+                <span className="float-left text-7xl font-bold text-[#26262c] mr-3 leading-none">A</span>
+                madlelo Aluhlaza Secondary​ aims at offering all our students a broad and balanced curriculum that provides rewarding and stimulating activities to prepare them for the best social and cultural life.
               </p>
             </div>
             <div>
@@ -37,19 +37,36 @@ const AcademicsPage: React.FC = () => {
       <section className="py-16 bg-[#f6f7fd]">
         <div className="container mx-auto px-6 sm:px-8 max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Science Department */}
+            {/* Home Language */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="w-full h-48 flex items-center justify-center overflow-hidden">
                 <img
                   src="images/homepage/science.jpg"
-                  alt="Science Department"
+                  alt="Home Language Department"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[#26262c] mb-3">Science Department</h3>
+                <h3 className="text-xl font-bold text-[#26262c] mb-3">Home Language</h3>
                 <p className="text-[#76767f]">
-                  Science Lab Fun Edutainment Lab, encouraging reasoning, discoveries, and inventions.
+                  Developing proficiency in students' native language for effective communication and cultural identity.
+                </p>
+              </div>
+            </div>
+
+            {/* First Additional Language */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="w-full h-48 flex items-center justify-center overflow-hidden">
+                <img
+                  src="https://sacredheartoakford.co.za/wp-content/uploads/2024/05/school-template-curriculum-img-5.jpg"
+                  alt="First Additional Language"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#26262c] mb-3">First Additional Language</h3>
+                <p className="text-[#76767f]">
+                  Learning additional languages to promote multilingualism and cultural understanding.
                 </p>
               </div>
             </div>
@@ -58,9 +75,9 @@ const AcademicsPage: React.FC = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="w-full h-48 flex items-center justify-center overflow-hidden">
                 <img
-                  src="https://sacredheartoakford.co.za/wp-content/uploads/2024/05/school-template-curriculum-img-5.jpg"
+                  src="https://sacredheartoakford.co.za/wp-content/uploads/2024/05/20240528_082309-scaled.jpg"
                   alt="Mathematics"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <div className="p-6">
@@ -71,19 +88,121 @@ const AcademicsPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Computer Application Technology */}
+            {/* Mathematical Literacy */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="w-full h-48 flex items-center justify-center overflow-hidden">
                 <img
-                  src="https://sacredheartoakford.co.za/wp-content/uploads/2024/05/20240528_082309-scaled.jpg"
-                  alt="Computer Application Technology"
+                  src="https://sacredheartoakford.co.za/wp-content/uploads/2024/07/20240722_110832-scaled.jpg"
+                  alt="Mathematical Literacy"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[#26262c] mb-3">Computer Application Technology</h3>
+                <h3 className="text-xl font-bold text-[#26262c] mb-3">Mathematical Literacy</h3>
                 <p className="text-[#76767f]">
-                  Hands-on experience with the latest computer applications and technology.
+                  Practical application of mathematics in everyday life situations.
+                </p>
+              </div>
+            </div>
+
+            {/* Natural Sciences */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="w-full h-48 flex items-center justify-center overflow-hidden">
+                <img
+                  src="https://sacredheartoakford.co.za/wp-content/uploads/2024/05/school-template-curriculum-img-3.jpg"
+                  alt="Natural Sciences"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#26262c] mb-3">Natural Sciences</h3>
+                <p className="text-[#76767f]">
+                  Exploring the physical and natural world through observation and experimentation.
+                </p>
+              </div>
+            </div>
+
+            {/* Technology */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="w-full h-48 flex items-center justify-center overflow-hidden">
+                <img
+                  src="https://sacredheartoakford.co.za/wp-content/uploads/2024/07/20240722_110739-scaled.jpg"
+                  alt="Technology"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#26262c] mb-3">Technology</h3>
+                <p className="text-[#76767f]">
+                  Applying scientific knowledge to solve practical problems and create solutions.
+                </p>
+              </div>
+            </div>
+
+            {/* Social Sciences */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="w-full h-48 flex items-center justify-center overflow-hidden">
+                <img
+                  src="https://sacredheartoakford.co.za/wp-content/uploads/2024/05/shutterstock_1289254792.jpg"
+                  alt="Social Sciences"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#26262c] mb-3">Social Sciences</h3>
+                <p className="text-[#76767f]">
+                  Understanding human society, history, geography, and civic responsibilities.
+                </p>
+              </div>
+            </div>
+
+            {/* Economic Management Sciences */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="w-full h-48 flex items-center justify-center overflow-hidden">
+                <img
+                  src="/images/activities/main.jpg"
+                  alt="Economic Management Sciences"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#26262c] mb-3">Economic Management Sciences</h3>
+                <p className="text-[#76767f]">
+                  Learning about business, economics, and accounting principles for practical application.
+                </p>
+              </div>
+            </div>
+
+            {/* Life Orientation */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="w-full h-48 flex items-center justify-center overflow-hidden">
+                <img
+                  src="https://sacredheartoakford.co.za/wp-content/uploads/2024/05/ElectricalEngineering_1000x750.jpg"
+                  alt="Life Orientation"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#26262c] mb-3">Life Orientation</h3>
+                <p className="text-[#76767f]">
+                  Developing life skills, personal growth, and social responsibility.
+                </p>
+              </div>
+            </div>
+
+            {/* Creative Arts */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="w-full h-48 flex items-center justify-center overflow-hidden">
+                <img
+                  src="https://sacredheartoakford.co.za/wp-content/uploads/2024/05/ElectricalEngineering_1000x750.jpg"
+                  alt="Creative Arts"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#26262c] mb-3">Creative Arts</h3>
+                <p className="text-[#76767f]">
+                  Exploring artistic expression through visual and performing arts.
                 </p>
               </div>
             </div>
@@ -105,19 +224,70 @@ const AcademicsPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Humanities */}
+            {/* History */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="w-full h-48 flex items-center justify-center overflow-hidden">
                 <img
                   src="https://sacredheartoakford.co.za/wp-content/uploads/2024/05/school-template-curriculum-img-3.jpg"
-                  alt="Humanities"
+                  alt="History"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[#26262c] mb-3">Humanities</h3>
+                <h3 className="text-xl font-bold text-[#26262c] mb-3">History</h3>
                 <p className="text-[#76767f]">
-                  The study of ancient and modern languages, philosophy, history, and more.
+                  Understanding past events to shape future perspectives and national identity.
+                </p>
+              </div>
+            </div>
+
+            {/* Geography */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="w-full h-48 flex items-center justify-center overflow-hidden">
+                <img
+                  src="https://sacredheartoakford.co.za/wp-content/uploads/2024/07/20240722_110739-scaled.jpg"
+                  alt="Geography"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#26262c] mb-3">Geography</h3>
+                <p className="text-[#76767f]">
+                  Exploring the relationship between people and their environment.
+                </p>
+              </div>
+            </div>
+
+            {/* Agricultural Sciences */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="w-full h-48 flex items-center justify-center overflow-hidden">
+                <img
+                  src="https://sacredheartoakford.co.za/wp-content/uploads/2024/05/shutterstock_1289254792.jpg"
+                  alt="Agricultural Sciences"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#26262c] mb-3">Agricultural Sciences</h3>
+                <p className="text-[#76767f]">
+                  Understanding agricultural practices and sustainable farming methods.
+                </p>
+              </div>
+            </div>
+
+            {/* Economics */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="w-full h-48 flex items-center justify-center overflow-hidden">
+                <img
+                  src="/images/activities/main.jpg"
+                  alt="Economics"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#26262c] mb-3">Economics</h3>
+                <p className="text-[#76767f]">
+                  Learning about economic systems, markets, and resource allocation.
                 </p>
               </div>
             </div>
@@ -138,58 +308,6 @@ const AcademicsPage: React.FC = () => {
                 </p>
               </div>
             </div>
-
-            {/* Agricultural Science */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="w-full h-48 flex items-center justify-center overflow-hidden">
-                <img
-                  src="https://sacredheartoakford.co.za/wp-content/uploads/2024/05/shutterstock_1289254792.jpg"
-                  alt="Agricultural Science"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-[#26262c] mb-3">Agricultural Science</h3>
-                <p className="text-[#76767f]">
-                  Unravel the mysteries of life and growth.
-                </p>
-              </div>
-            </div>
-
-            {/* Drama Program */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="w-full h-48 flex items-center justify-center overflow-hidden">
-                <img
-                  src="/images/activities/main.jpg"
-                  alt="Drama Program"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-[#26262c] mb-3">Drama and Music</h3>
-                <p className="text-[#76767f]">
-                  At Sacred Heart Secondary School, we believe in the power of the art to inspire.
-                </p>
-              </div>
-            </div>
-
-            {/* Electrical Engineering (up coming) */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="w-full h-48 flex items-center justify-center overflow-hidden">
-                <img
-                  src="https://sacredheartoakford.co.za/wp-content/uploads/2024/05/ElectricalEngineering_1000x750.jpg"
-                  alt="Electrical Engineering"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-[#26262c] mb-3">Electrical Engineering (up coming)</h3>
-                <p className="text-[#76767f]">
-                  Ever wondered how electricity flows.
-                </p>
-              </div>
-            </div>
-
 
           </div>
         </div>

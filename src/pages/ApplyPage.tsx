@@ -26,7 +26,7 @@ const ApplyPage: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-10">
           <h1 className="text-3xl md:text-4xl font-bold text-[#26262c] mb-3">
-            Apply to Sacred Heart Secondary School
+            Apply to Amadlelo Aluhlaza Secondary School
           </h1>
           <p className="text-[#76767f] text-lg">
             Complete the form below to submit your application

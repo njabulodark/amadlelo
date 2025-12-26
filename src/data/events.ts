@@ -6,34 +6,34 @@ export interface Event {
 }
 
 export const eventsData: Event[] = [
-  { 
-    id: 1, 
-    title: 'Inter-house Athletics', 
-    date: 'March 15, 2024', 
-    description: 'Annual inter-house athletics competition for all grades.' 
+  {
+    id: 1,
+    title: 'ABC Motsepe Schools Eisteddfod',
+    date: '2024',
+    description: 'Our choir achieved position 2 in the AU Anthem category and position 3 in the National Anthem category.'
   },
-  { 
-    id: 2, 
-    title: 'Parent Evening', 
-    date: 'March 22, 2024', 
-    description: 'Term planning and parent-teacher meeting.' 
+  {
+    id: 2,
+    title: 'Eskom Simama Ranta Competition',
+    date: '2016',
+    description: 'Our students were 2nd runner-up in the Mpumalanga province for the High School Entrepreneurship Education Competition.'
   },
-  { 
-    id: 3, 
-    title: 'Matric Dance', 
-    date: 'April 5, 2024', 
-    description: 'Annual matric dance for Grade 12 students.' 
+  {
+    id: 3,
+    title: 'Desk Donation Ceremony',
+    date: 'April 9, 2024',
+    description: 'Mpumalanga MEC for Public Works, Roads, and Transport donated 100 classroom desks to the school.'
   },
-  { 
-    id: 4, 
-    title: 'Science Fair', 
-    date: 'May 10, 2024', 
-    description: 'Showcasing student projects and innovations.' 
+  {
+    id: 4,
+    title: 'Opening of Inqubeko Secondary School',
+    date: '2012',
+    description: 'New relief school established to address overcrowding at Amadlelo Aluhlaza.'
   },
-  { 
-    id: 5, 
-    title: 'Annual Concert', 
-    date: 'June 28, 2024', 
-    description: 'Talented students performing music and drama.' 
+  {
+    id: 5,
+    title: 'Opening of Ubuhlebuzile Secondary School',
+    date: '2015',
+    description: 'Additional relief school opened to address overcrowding at Amadlelo Aluhlaza.'
   },
 ];

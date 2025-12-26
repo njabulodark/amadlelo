@@ -107,7 +107,7 @@ const TeachersPage = () => {
               <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Our Principal</h3>
               <div className="prose prose-lg text-slate-600 mb-6 leading-relaxed">
                 <p>
-                  Our dedicated Principal leads Sacred Heart Secondary School with vision, integrity, and a deep commitment to educational excellence.
+                  Our dedicated Principal leads Amadlelo Aluhlaza Secondary School with vision, integrity, and a deep commitment to educational excellence.
                   Under their guidance, our school continues to thrive as a nurturing environment for academic and personal growth.
                 </p>
                 <p>
