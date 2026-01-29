@@ -16,14 +16,14 @@ const ContactPage: React.FC = () => {
                   <MapPin className="w-6 h-6 text-[#4747d7] mt-1 mr-4" />
                   <div>
                     <h3 className="font-semibold text-[#26262c]">Address</h3>
-                    <p className="text-[#76767f]">1073 Phila Myeni Avenue, Mkhondo, Piet Retief, 2380</p>
+                    <p className="text-[#76767f]">Stand No. 1072, 4th Avenue, Thandukukhanya, Piet Retief</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Phone className="w-6 h-6 text-[#4747d7] mt-1 mr-4" />
                   <div>
                     <h3 className="font-semibold text-[#26262c]">Phone</h3>
-                    <p className="text-[#76767f]">0178262483</p>
+                    <p className="text-[#76767f]">017 826 1620 / 079 207 8269</p>
                   </div>
                 </div>
                 <div className="flex items-start">

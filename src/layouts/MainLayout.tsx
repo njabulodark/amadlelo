@@ -9,27 +9,13 @@ interface MainLayoutProps { }
 const MainLayout: React.FC<MainLayoutProps> = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // @ts-ignore
-  interface MenuItem {
-    name: string;
-    path: string;
-    hasDropdown?: boolean;
-    dropdownItems?: MenuItem[];
-  }
-
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const menuItems = [
     { name: 'Home', path: '/' },
-    {
-      name: 'About Us', path: '#', hasDropdown: true, dropdownItems: [
-        { name: 'Students', path: '/students' },
-        { name: 'Our Teachers', path: '/staff' }
-      ]
-    },
+    { name: 'About Us', path: '/about' },
     { name: 'Academics', path: '/academics' },
     { name: 'Activities', path: '/activities' },
-    { name: 'Sports', path: '/sports' },
     { name: 'Admissions', path: '/admissions' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -47,47 +33,21 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
                 className="h-10 sm:h-12 w-auto mr-2"
               />
               <div>
-                <h1 className="text-lg sm:text-xl font-bold text-[#4747d7]">Amadlelo Aluhlaza</h1>
-                <span className="hidden sm:block text-[#26262c] text-xs sm:text-sm font-light">Secondary School</span>
+                <h1 className="text-lg sm:text-xl font-bold text-[#4747d7]">Nqobile Primary School</h1>
+                <span className="hidden sm:block text-[#26262c] text-xs sm:text-sm font-light">Gateway to Opportunity</span>
               </div>
             </div>
 
             <nav className="hidden md:block">
               <ul className="flex flex-wrap justify-center space-x-2 sm:space-x-4">
                 {menuItems.map((item) => (
-                  <li key={item.name} className="relative group">
-                    {item.hasDropdown ? (
-                      <>
-                        <Link
-                          to={item.path}
-                          className="font-medium text-[#76767f] hover:text-[#4747d7] transition-colors duration-300 flex items-center font-sans text-sm sm:text-base"
-                        >
-                          {item.name}
-                          <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                          </svg>
-                        </Link>
-                        <ul className="absolute top-full left-0 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 min-w-max">
-                          {item.dropdownItems?.map((subItem) => (
-                            <li key={subItem.name}>
-                              <Link
-                                to={subItem.path}
-                                className="block px-4 py-2 text-[#76767f] hover:bg-[#f6f7fd] hover:text-[#4747d7] whitespace-nowrap text-sm"
-                              >
-                                {subItem.name}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </>
-                    ) : (
-                      <Link
-                        to={item.path}
-                        className="font-medium text-[#76767f] hover:text-[#4747d7] transition-colors duration-300 font-sans text-sm sm:text-base"
-                      >
-                        {item.name}
-                      </Link>
-                    )}
+                  <li key={item.name}>
+                    <Link
+                      to={item.path}
+                      className="font-medium text-[#76767f] hover:text-[#4747d7] transition-colors duration-300 font-sans text-sm sm:text-base"
+                    >
+                      {item.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -108,34 +68,13 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
               <ul className="space-y-2">
                 {menuItems.map((item) => (
                   <li key={item.name}>
-                    {item.hasDropdown ? (
-                      <div>
-                        <div className="block py-2 px-4 rounded-md text-[#76767f] font-medium font-sans">
-                          {item.name}
-                        </div>
-                        <ul className="pl-6 space-y-1 mt-1">
-                          {item.dropdownItems?.map((subItem) => (
-                            <li key={subItem.name}>
-                              <Link
-                                to={subItem.path}
-                                className="block py-1.5 px-4 rounded-md text-[#76767f] hover:bg-[#f6f7fd] hover:text-[#4747d7] transition-colors duration-300 font-sans text-sm"
-                                onClick={() => setIsMenuOpen(false)}
-                              >
-                                {subItem.name}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ) : (
-                      <Link
-                        to={item.path}
-                        className="block py-2 px-4 rounded-md text-[#76767f] hover:bg-[#f6f7fd] hover:text-[#4747d7] transition-colors duration-300 font-sans"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        {item.name}
-                      </Link>
-                    )}
+                    <Link
+                      to={item.path}
+                      className="block py-2 px-4 rounded-md text-[#76767f] hover:bg-[#f6f7fd] hover:text-[#4747d7] transition-colors duration-300 font-sans"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -156,16 +95,16 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
         <div className="container mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h4 className="text-lg font-semibold mb-4">Amadlelo Aluhlaza Secondary​</h4>
+              <h4 className="text-lg font-semibold mb-4">Nqobile Primary School​</h4>
               <p className="text-white">
-                1073 Phila Myeni Avenue, Mkhondo, Piet Retief, 2380
+                Stand No. 1072, 4th Avenue, Thandukukhanya, Piet Retief
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold mb-4">Main Office</h4>
               <p className="text-white mb-2">
-                0178262483
+                017 826 1620
               </p>
               <p className="text-white">
                 7:30 a.m. – 14:30 p.m.
@@ -199,13 +138,10 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
             <div className="mb-6 md:mb-0">
               <ul className="flex flex-wrap justify-center gap-4">
                 <li><Link to="/" className="text-[#bfd1ff] hover:text-white transition-colors">Home</Link></li>
+                <li><Link to="/about" className="text-[#bfd1ff] hover:text-white transition-colors">About Us</Link></li>
                 <li><Link to="/academics" className="text-[#bfd1ff] hover:text-white transition-colors">Academics</Link></li>
                 <li><Link to="/admissions" className="text-[#bfd1ff] hover:text-white transition-colors">Admissions</Link></li>
-                <li><Link to="/apply" className="text-[#bfd1ff] hover:text-white transition-colors">Apply</Link></li>
                 <li><Link to="/activities" className="text-[#bfd1ff] hover:text-white transition-colors">Activities</Link></li>
-                <li><Link to="/sports" className="text-[#bfd1ff] hover:text-white transition-colors">Sports</Link></li>
-                <li><Link to="/staff" className="text-[#bfd1ff] hover:text-white transition-colors">Our Teachers</Link></li>
-                <li><Link to="/students" className="text-[#bfd1ff] hover:text-white transition-colors">Students</Link></li>
                 <li><Link to="/contact" className="text-[#bfd1ff] hover:text-white transition-colors">Contact</Link></li>
               </ul>
             </div>
@@ -235,7 +171,7 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
           </div>
 
           <div className="border-t border-[#4747d7] mt-8 pt-6 text-center text-[#bfd1ff]">
-            <p>&copy; {new Date().getFullYear()} Amadlelo Aluhlaza Secondary School. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Nqobile Primary School. All rights reserved.</p>
           </div>
         </div>
       </footer>

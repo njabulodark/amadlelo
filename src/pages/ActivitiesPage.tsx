@@ -43,14 +43,14 @@ const ActivitiesPage: React.FC = () => {
 
         <div className="container mx-auto px-6 sm:px-8 max-w-6xl">
 
-          {/* Item 1: Music */}
+          {/* Item 1: Running */}
           <div className="group grid grid-cols-1 lg:grid-cols-12 gap-12 mb-32 items-center">
             {/* Image Side */}
             <div className="lg:col-span-7 order-2 lg:order-1 relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/10">
                 <img
-                  src="images/activities/main.jpg"
-                  alt="Music Class"
+                  src="/images/activities/pic1.jpg"
+                  alt="Students Athletics"
                   className="w-full h-[400px] object-cover transform transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors duration-500"></div>
@@ -59,11 +59,11 @@ const ActivitiesPage: React.FC = () => {
               <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-xl hidden md:block">
                 <div className="flex items-center gap-3">
                   <div className="bg-blue-50 p-3 rounded-full text-blue-600">
-                    <Music size={24} />
+                    <Star size={24} />
                   </div>
                   <div>
                     <p className="text-xs text-slate-400 font-bold uppercase tracking-wider">Department</p>
-                    <p className="text-blue-900 font-serif font-bold">Music Theory</p>
+                    <p className="text-blue-900 font-serif font-bold">Athletics</p>
                   </div>
                 </div>
               </div>
@@ -71,14 +71,14 @@ const ActivitiesPage: React.FC = () => {
 
             {/* Text Side */}
             <div className="lg:col-span-5 order-1 lg:order-2">
-              <span className="text-blue-500 font-bold tracking-widest text-xs uppercase mb-2 block"> mentorship</span>
-              <h2 className="text-4xl font-serif font-bold text-blue-950 mb-6">Music</h2>
+              <span className="text-blue-500 font-bold tracking-widest text-xs uppercase mb-2 block"> Endurance & Speed</span>
+              <h2 className="text-4xl font-serif font-bold text-blue-950 mb-6">Running</h2>
               <div className="w-12 h-1 bg-blue-200 mb-6"></div>
               <p className="text-slate-600 leading-8 mb-6 text-lg">
-                Amadlelo Aluhlaza is very proud to have <strong className="text-blue-900">Mr. Mthobisi Mthalane</strong> as our full-time music teacher.
+                Nqobile Primary School fosters a culture of physical fitness through our dedicated <strong className="text-blue-900">Running and Athletics</strong> program.
               </p>
               <p className="text-slate-500 leading-relaxed mb-8">
-                Mr. Mthalane brings world-class experience, having collaborated with high-profile artists such as Dorothy Masuku, Camagwini, and the Jazel brothers. His industry insight bridges the gap between academic theory and professional performance.
+                Our athletic program focuses on developing stamina, discipline, and a healthy competitive spirit. From short-distance sprints to middle-distance running, our learners are trained to push their limits and represent the school with pride at circuit and district athletic meets.
               </p>
             </div>
           </div>
@@ -126,14 +126,14 @@ const ActivitiesPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Item 3: Performing Arts */}
+          {/* Item 3: Soccer */}
           <div className="group grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Image Side */}
             <div className="lg:col-span-7 order-2 lg:order-1 relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/10">
                 <img
-                  src="images/activities/pic7.jpg"
-                  alt="Performing Arts"
+                  src="/images/homepage/soccer.jpg"
+                  alt="Soccer Team"
                   className="w-full h-[400px] object-cover transform transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/20 to-transparent"></div>
@@ -142,14 +142,14 @@ const ActivitiesPage: React.FC = () => {
 
             {/* Text Side */}
             <div className="lg:col-span-5 order-1 lg:order-2">
-              <span className="text-blue-500 font-bold tracking-widest text-xs uppercase mb-2 block">Expression</span>
-              <h2 className="text-4xl font-serif font-bold text-blue-950 mb-6">Performing Arts</h2>
+              <span className="text-blue-500 font-bold tracking-widest text-xs uppercase mb-2 block">Physical Excellence</span>
+              <h2 className="text-4xl font-serif font-bold text-blue-950 mb-6">Soccer</h2>
               <div className="w-12 h-1 bg-blue-200 mb-6"></div>
               <p className="text-slate-600 leading-8 mb-6 text-lg">
-                The stage is a classroom for confidence.
+                Building teamwork and discipline on the field.
               </p>
               <p className="text-slate-500 leading-relaxed mb-8">
-                With professionals on board, we take pride in training our students in dance, drama, and painting. We organize exhibitions, concerts, and musical events to encourage our students to own their talent and flourish.
+                Soccer is a cornerstone of our extra-mural program. We emphasize physical development, strategic thinking, and the spirit of sportsmanship. Our teams participate in local circuit leagues, fostering community pride and healthy competition among our learners.
               </p>
             </div>
           </div>
@@ -187,6 +187,89 @@ const ActivitiesPage: React.FC = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Achievements and Extra-mural Activities Section */}
+      <section className="py-24 bg-white border-t border-slate-200">
+        <div className="container mx-auto px-6 sm:px-8 max-w-6xl">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h6 className="text-blue-500 font-bold tracking-widest text-xs uppercase mb-3">Excellence Beyond Classroom</h6>
+            <h3 className="text-3xl md:text-4xl font-serif font-bold text-blue-950 mb-4">
+              Achievements & Extra-mural Activities
+            </h3>
+            <p className="text-slate-500">
+              The school encourages participation in activities to improve concentration and time management.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            {/* Choral Music Achievement */}
+            <div className="bg-[#f6f7fd] rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-blue-100 p-3 rounded-full text-blue-600">
+                  <Music size={24} />
+                </div>
+                <h4 className="text-2xl font-serif font-bold text-blue-950">Choral Music</h4>
+              </div>
+              <p className="text-slate-600 mb-4 leading-relaxed">
+                The school has achieved a <span className="text-blue-600 font-bold">“sterling performance”</span> in the ABC Motsepe Schools Eisteddfod (formerly SASCE).
+              </p>
+              <ul className="space-y-3 text-slate-600 mb-6">
+                <li className="flex items-start gap-3">
+                  <Star size={18} className="text-yellow-400 mt-1 flex-shrink-0" />
+                  <span><strong>Position 2</strong> in the AU Anthem category</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Star size={18} className="text-yellow-400 mt-1 flex-shrink-0" />
+                  <span><strong>Position 2</strong> in the mixed choirs’ presentation of <em>Ingoduso</em> by RT Caluza</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Star size={18} className="text-yellow-400 mt-1 flex-shrink-0" />
+                  <span><strong>Position 3</strong> in the National Anthem category</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Entrepreneurship Achievement */}
+            <div className="bg-[#f6f7fd] rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-blue-100 p-3 rounded-full text-blue-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-briefcase"><rect width="20" height="14" x="2" y="7" rx="2" ry="2" /><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /></svg>
+                </div>
+                <h4 className="text-2xl font-serif font-bold text-blue-950">Entrepreneurship</h4>
+              </div>
+              <p className="text-slate-600 mb-4 leading-relaxed">
+                Fostering business acumen and innovation in our learners.
+              </p>
+              <ul className="space-y-3 text-slate-600">
+                <li className="flex items-start gap-3">
+                  <Star size={18} className="text-yellow-400 mt-1 flex-shrink-0" />
+                  <span>In 2016, the school was the <strong>2nd runner-up</strong> in the Mpumalanga province for the provincial School Entrepreneurship Education Competition.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Offered Activities */}
+          <div className="bg-blue-950 rounded-2xl p-8 md:p-12 text-center text-white relative overflow-hidden">
+            {/* Background decoration */}
+            <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0 opacity-10">
+              <div className="absolute top-[-50%] left-[-20%] w-[800px] h-[800px] bg-blue-500/50 rounded-full blur-3xl"></div>
+            </div>
+
+            <div className="relative z-10">
+              <h4 className="text-2xl md:text-3xl font-serif font-bold mb-8">Offered Activities</h4>
+              <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+                {['Soccer', 'Athletics', 'Netball', 'Speech'].map((activity, index) => (
+                  <div key={index} className="px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-lg font-medium tracking-wide hover:bg-white hover:text-blue-950 transition-colors duration-300">
+                    {activity}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 

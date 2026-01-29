@@ -11,15 +11,15 @@ const AdmissionsPage: React.FC = () => {
         <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
           <h2 className="text-2xl font-semibold text-[#26262c] mb-4">Entry Requirements</h2>
           <p className="text-[#76767f] mb-6">
-            Amadlelo Aluhlaza Secondary School welcomes applications from students who demonstrate academic potential
+            Nqobile Primary School welcomes applications from students who demonstrate academic potential
             and a commitment to our values of excellence, integrity, and service.
           </p>
 
           <div className="space-y-6">
             <div className="border-l-4 border-[#4747d7] pl-4 py-1">
-              <h3 className="text-xl font-semibold text-[#26262c] mb-2">Grade 8 Applications</h3>
+              <h3 className="text-xl font-semibold text-[#26262c] mb-2">Admissions Process</h3>
               <p className="text-[#76767f] mb-3">
-                Applications for Grade 8 are accepted from March to September of the preceding year.
+                Standard South African public school application windows typically run between <strong>1 August and 31 September</strong> of the year preceding enrolment.
                 Prospective students must submit:
               </p>
               <ul className="list-disc pl-5 text-[#76767f] space-y-1 mb-4">

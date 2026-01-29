@@ -1,12 +1,12 @@
-import React  from 'react';
+import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
 import AcademicsPage from './pages/AcademicsPage';
 import AdmissionsPage from './pages/AdmissionsPage';
 import ApplyPage from './pages/ApplyPage';
 import ActivitiesPage from './pages/ActivitiesPage';
-import SportsPage from './pages/SportsPage';
 import StudentsPage from './pages/StudentsPage';
 import TeachersPage from './pages/TeachersPage';
 import ContactPage from './pages/ContactPage';
@@ -23,7 +23,7 @@ const App: React.FC = () => {
           <Route path="/admissions" element={<AdmissionsPage />} />
           <Route path="/apply" element={<ApplyPage />} />
           <Route path="/activities" element={<ActivitiesPage />} />
-          <Route path="/sports" element={<SportsPage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/staff" element={<TeachersPage />} />
           <Route path="/students" element={<StudentsPage />} />
           <Route path="/contact" element={<ContactPage />} />

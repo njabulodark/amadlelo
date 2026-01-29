@@ -11,13 +11,13 @@ interface MetaTagsProps {
 }
 
 const MetaTags: React.FC<MetaTagsProps> = ({
-    title = 'Amadlelo Aluhlaza Secondary School',
-    description = 'Amadlelo Aluhlaza Secondary School provides quality education with a focus on academic excellence, character development, and holistic growth for students.',
-    image = '/images/homepage/sacred.jpg',
+    title = 'Nqobile Primary School',
+    description = 'Nqobile Primary School is a No-Fee Public Ordinary School in Piet Retief, serving as a gateway to opportunity for the Ethandakukhanya community.',
+    image = '/images/homepage/school-building.jpg', // Placeholder or keep existing if generic, but updating name
     url = '/',
     type = 'website',
-    keywords = ['school', 'education', 'secondary school', 'south africa'],
-    author = 'Amadlelo Aluhlaza Secondary School'
+    keywords = ['Nqobile Primary School', 'Piet Retief', 'Ethandakukhanya', 'primary education', 'Mpumalanga schools'],
+    author = 'Nqobile Primary School'
 }) => {
     return (
         <>
