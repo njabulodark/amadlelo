@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Users, Tent, Camera } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Tent, Camera } from 'lucide-react';
 
 
 const StudentsPage: React.FC = () => {

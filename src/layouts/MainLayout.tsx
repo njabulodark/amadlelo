@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import { Menu, X, MapPin, Phone, Clock, Mail, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Menu, X, MapPin, Phone, Clock, Facebook, Instagram } from 'lucide-react';
 import MetaTags from '../components/MetaTags';
 import EducationalInstitutionSchema from '../components/EducationalInstitutionSchema';
 
