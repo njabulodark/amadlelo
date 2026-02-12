@@ -5,7 +5,7 @@ const AcademicsPage: React.FC = () => {
     <div className="bg-white min-h-screen">
 
       {/* REVAMPED HERO SECTION */}
-      <section className="relative min-h-[80vh] flex items-center justify-center bg-cover bg-center bg-fixed" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2070&auto=format&fit=crop")' }}>
+      <section className="relative min-h-[80vh] flex items-center justify-center bg-cover bg-center bg-fixed" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2670&auto=format&fit=crop")' }}>
         {/* Dark Overlay for Readability */}
         <div className="absolute inset-0 bg-[#26262c]/85"></div>
 

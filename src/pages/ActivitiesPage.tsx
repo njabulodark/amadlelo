@@ -1,14 +1,13 @@
 import React from 'react';
 import { Music, Users, ArrowRight, Star } from 'lucide-react';
-import { asset } from '../utils/assetPath';
 
 const ActivitiesPage: React.FC = () => {
 
   const galleryImages = [
-    { src: asset("images/activities/pic1.jpg"), title: "Instrumental" },
-    { src: asset("images/activities/pic2.jpg"), title: "Vocal Training" },
-    { src: asset("images/activities/pic5.jpg"), title: "Ensemble" },
-    { src: asset("images/activities/pic6.jpg"), title: "Theory" }
+    { src: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?q=80&w=2670&auto=format&fit=crop", title: "Instrumental" },
+    { src: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2574&auto=format&fit=crop", title: "Vocal Training" },
+    { src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2670&auto=format&fit=crop", title: "Ensemble" },
+    { src: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?q=80&w=2664&auto=format&fit=crop", title: "Theory" }
   ];
 
   return (
@@ -50,7 +49,7 @@ const ActivitiesPage: React.FC = () => {
             <div className="lg:col-span-7 order-2 lg:order-1 relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/10">
                 <img
-                  src={asset("/images/activities/pic1.jpg")}
+                  src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2670&auto=format&fit=crop"
                   alt="Students Athletics"
                   className="w-full h-[400px] object-cover transform transition-transform duration-700 group-hover:scale-105"
                 />
@@ -107,7 +106,7 @@ const ActivitiesPage: React.FC = () => {
               <div className="absolute top-0 right-0 w-full h-full bg-blue-50 rounded-2xl transform translate-x-4 translate-y-4"></div>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/10">
                 <img
-                  src={asset("images/activities/choir.jpg")}
+                  src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2574&auto=format&fit=crop"
                   alt="School Choir"
                   className="w-full h-[400px] object-cover transform transition-transform duration-700 group-hover:scale-105"
                 />
@@ -133,7 +132,7 @@ const ActivitiesPage: React.FC = () => {
             <div className="lg:col-span-7 order-2 lg:order-1 relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/10">
                 <img
-                  src={asset("/images/homepage/soccer.jpg")}
+                  src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=2670&auto=format&fit=crop"
                   alt="Soccer Team"
                   className="w-full h-[400px] object-cover transform transition-transform duration-700 group-hover:scale-105"
                 />

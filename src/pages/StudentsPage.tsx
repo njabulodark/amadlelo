@@ -1,11 +1,25 @@
 import React, { useState } from 'react';
-import { asset } from '../utils/assetPath';
+
 import { ChevronLeft, ChevronRight, Tent, Camera } from 'lucide-react';
 
 
 const StudentsPage: React.FC = () => {
   const [bootCampIndex, setBootCampIndex] = useState(0);
-  const bootCampImages = Array.from({ length: 13 }, (_, i) => asset(`/images/students/camp/pic${i + 1}.jpg`));
+  const bootCampImages = [
+    "https://images.unsplash.com/photo-1478061690022-77eb57ea4b21?q=80&w=2672&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1526976668912-1a811878dd37?q=80&w=2670&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1529390079861-591de354faf5?q=80&w=2670&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1525921429624-479b6a26d84d?q=80&w=2670&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1502086223501-681a9134e637?q=80&w=2670&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2670&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=2669&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?q=80&w=2670&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1526676037777-05a232554f77?q=80&w=2670&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?q=80&w=2574&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1519861531473-920026393112?q=80&w=2676&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1503919545889-aef6d293c94c?q=80&w=2574&auto=format&fit=crop"
+  ];
 
   const nextSlide = (setIndex: React.Dispatch<React.SetStateAction<number>>, total: number) => {
     setIndex((prev) => (prev + 1) % total);
@@ -22,7 +36,7 @@ const StudentsPage: React.FC = () => {
       <section
         className="py-16 bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${asset('/images/students/hero.jpg')}')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1531497274076-63063755733d?q=80&w=2670&auto=format&fit=crop')`,
           backgroundPosition: 'top',
         }}
       >
@@ -55,11 +69,16 @@ const StudentsPage: React.FC = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-            {[1, 2, 3, 4].map((num) => (
-              <div className="group relative overflow-hidden rounded-xl shadow-lg h-64 cursor-pointer">
+            {[
+              "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2670&auto=format&fit=crop",
+              "https://images.unsplash.com/photo-1516280440614-6697288d5d38?q=80&w=2670&auto=format&fit=crop",
+              "https://images.unsplash.com/photo-1531123414780-f74242c2b052?q=80&w=2574&auto=format&fit=crop",
+              "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?q=80&w=2670&auto=format&fit=crop"
+            ].map((url, idx) => (
+              <div key={idx} className="group relative overflow-hidden rounded-xl shadow-lg h-64 cursor-pointer">
                 <img
-                  src={asset(`/images/students/student${num}.jpg`)}
-                  alt={`Sponsor ${num}`}
+                  src={url}
+                  alt={`Student ${idx + 1}`}
                   className="object-cover w-full h-full block transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">

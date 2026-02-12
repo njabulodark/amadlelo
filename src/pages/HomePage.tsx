@@ -92,7 +92,7 @@ const HomePage: React.FC = () => {
         <div className="absolute inset-0 z-0 select-none">
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20 z-10" />
           <ResponsiveImage
-            src={asset('/images/homepage/sacred.jpg')}
+            src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2670&auto=format&fit=crop"
             alt="Nqobile Primary School Campus"
             className="w-full h-full object-cover scale-105 animate-slow-zoom"
           />
@@ -326,12 +326,12 @@ const HomePage: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "Foundation Phase", desc: "Grades R-3: Building literacy and numeracy in IsiZulu.", img: asset("/images/homepage/computerlap.jpg") },
-              { title: "Intersen Phase", desc: "Grades 4-7: Transitioning to English medium instruction.", img: asset("/images/homepage/science.jpg") },
-              { title: "Mathematics", desc: "Dedicated HOD-led stream for building logic.", img: asset("/images/homepage/maths.jpg") },
-              { title: "Natural Sciences", desc: "Exploring the natural world and technology.", img: asset("/images/homepage/science.jpg") },
-              { title: "Social Sciences", desc: "History and Geography appropriate for the context.", img: asset("/images/homepage/humanities.jpg") },
-              { title: "Life Skills", desc: "Creative Arts and personal development.", img: asset("/images/homepage/drama.jpg") }
+              { title: "Foundation Phase", desc: "Grades R-3: Building literacy and numeracy in IsiZulu.", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2660&auto=format&fit=crop" },
+              { title: "Intersen Phase", desc: "Grades 4-7: Transitioning to English medium instruction.", img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2670&auto=format&fit=crop" },
+              { title: "Mathematics", desc: "Dedicated HOD-led stream for building logic.", img: "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?q=80&w=2667&auto=format&fit=crop" },
+              { title: "Natural Sciences", desc: "Exploring the natural world and technology.", img: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2670&auto=format&fit=crop" },
+              { title: "Social Sciences", desc: "History and Geography appropriate for the context.", img: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2628&auto=format&fit=crop" },
+              { title: "Life Skills", desc: "Creative Arts and personal development.", img: "https://images.unsplash.com/photo-1596496050844-461ac7322b70?q=80&w=2670&auto=format&fit=crop" }
             ].map((item, i) => (
               <FadeIn key={i} delay={i * 50} className="group cursor-pointer">
                 <div className="relative aspect-video rounded-2xl overflow-hidden mb-4 bg-gray-100">
@@ -391,7 +391,7 @@ const HomePage: React.FC = () => {
 
             <FadeIn delay={200} className="relative h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl">
               <ResponsiveImage
-                src={asset('/images/homepage/soccer.jpg')}
+                src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=2670&auto=format&fit=crop"
                 alt="Students playing"
                 className="w-full h-full object-cover"
               />
