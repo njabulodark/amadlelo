@@ -73,7 +73,7 @@ def rename_images_in_directory(root_dir):
 def main():
     # Get the directory where this script is located
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    images_dir = os.path.join(current_dir, "public", "images", "students", "2026camp")
+    images_dir = os.path.join(current_dir, "public", "images", "students")
     
     if not os.path.exists(images_dir):
         print(f"Error: Images directory {images_dir} does not exist")

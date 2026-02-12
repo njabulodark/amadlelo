@@ -3,13 +3,35 @@ import React from 'react';
 const AcademicsPage: React.FC = () => {
   return (
     <div className="bg-white min-h-screen">
-      {/* Page Title Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6 sm:px-8 max-w-6xl text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#26262c] tracking-tight">Academics</h1>
-          <p className="mt-4 text-[#76767f] text-lg max-w-2xl mx-auto">
+
+      {/* REVAMPED HERO SECTION */}
+      <section className="relative min-h-[80vh] flex items-center justify-center bg-cover bg-center bg-fixed" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2070&auto=format&fit=crop")' }}>
+        {/* Dark Overlay for Readability */}
+        <div className="absolute inset-0 bg-[#26262c]/85"></div>
+
+        {/* Content Container */}
+        <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
+
+          {/* Badge */}
+          <span className="inline-block py-1 px-3 rounded-full bg-[#4747d7]/20 border border-[#4747d7]/50 text-[#4747d7] text-sm font-semibold tracking-wider mb-6 uppercase animate-fade-in-up">
+            National Curriculum
+          </span>
+
+          {/* Main Heading */}
+          <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight mb-6 leading-tight drop-shadow-lg">
+            Academics
+          </h1>
+
+          {/* Subheading */}
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow-md">
             Providing high-quality, inclusive primary education aligned with the National Curriculum and Assessment Policy Statement (CAPS).
           </p>
+        </div>
+
+        {/* Decorative Background Elements (Glowing Orbs) */}
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#4747d7]/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
         </div>
       </section>
 

@@ -272,28 +272,6 @@ const ActivitiesPage: React.FC = () => {
 
         </div>
       </section>
-
-      {/* Video Section */}
-      <section className="py-24 bg-white relative overflow-hidden">
-        {/* Background blobs */}
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-50/50 skew-x-12 transform origin-top-right"></div>
-
-        <div className="container mx-auto px-6 sm:px-8 max-w-5xl relative z-10">
-          <div className="flex flex-col md:flex-row items-center justify-between mb-12">
-            <div>
-              <h3 className="text-3xl font-serif font-bold text-blue-950">Featured Performance</h3>
-              <p className="text-slate-500 mt-2">Experience the energy of our annual showcase.</p>
-            </div>
-          </div>
-
-          <div className="relative bg-slate-900 rounded-2xl overflow-hidden w-full aspect-video shadow-2xl border-4 border-white ring-1 ring-slate-200">
-            <video className="w-full h-full object-cover" controls>
-              <source src="images/activities/vid.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
