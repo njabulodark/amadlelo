@@ -1,13 +1,14 @@
 import React from 'react';
 import { Music, Users, ArrowRight, Star } from 'lucide-react';
+import { asset } from '../utils/assetPath';
 
 const ActivitiesPage: React.FC = () => {
 
   const galleryImages = [
-    { src: "images/activities/pic1.jpg", title: "Instrumental" },
-    { src: "images/activities/pic2.jpg", title: "Vocal Training" },
-    { src: "images/activities/pic5.jpg", title: "Ensemble" },
-    { src: "images/activities/pic6.jpg", title: "Theory" }
+    { src: asset("images/activities/pic1.jpg"), title: "Instrumental" },
+    { src: asset("images/activities/pic2.jpg"), title: "Vocal Training" },
+    { src: asset("images/activities/pic5.jpg"), title: "Ensemble" },
+    { src: asset("images/activities/pic6.jpg"), title: "Theory" }
   ];
 
   return (
@@ -49,7 +50,7 @@ const ActivitiesPage: React.FC = () => {
             <div className="lg:col-span-7 order-2 lg:order-1 relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/10">
                 <img
-                  src="/images/activities/pic1.jpg"
+                  src={asset("/images/activities/pic1.jpg")}
                   alt="Students Athletics"
                   className="w-full h-[400px] object-cover transform transition-transform duration-700 group-hover:scale-105"
                 />
@@ -106,7 +107,7 @@ const ActivitiesPage: React.FC = () => {
               <div className="absolute top-0 right-0 w-full h-full bg-blue-50 rounded-2xl transform translate-x-4 translate-y-4"></div>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/10">
                 <img
-                  src="images/activities/choir.jpg"
+                  src={asset("images/activities/choir.jpg")}
                   alt="School Choir"
                   className="w-full h-[400px] object-cover transform transition-transform duration-700 group-hover:scale-105"
                 />
@@ -132,7 +133,7 @@ const ActivitiesPage: React.FC = () => {
             <div className="lg:col-span-7 order-2 lg:order-1 relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/10">
                 <img
-                  src="/images/homepage/soccer.jpg"
+                  src={asset("/images/homepage/soccer.jpg")}
                   alt="Soccer Team"
                   className="w-full h-[400px] object-cover transform transition-transform duration-700 group-hover:scale-105"
                 />

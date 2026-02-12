@@ -3,6 +3,7 @@ import { Outlet, Link } from 'react-router-dom';
 import { Menu, X, MapPin, Phone, Clock, Facebook, Instagram } from 'lucide-react';
 import MetaTags from '../components/MetaTags';
 import EducationalInstitutionSchema from '../components/EducationalInstitutionSchema';
+import { asset } from '../utils/assetPath';
 
 interface MainLayoutProps { }
 
@@ -28,8 +29,8 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
           <div className="flex justify-between items-center py-2">
             <div className="flex items-center">
               <img
-                src="/images/logo.jpg"
-                alt="Amadlelo Aluhlaza Secondary School"
+                src={asset('/images/logo.jpg')}
+                alt="Nqobile Primary School"
                 className="h-10 sm:h-12 w-auto mr-2"
               />
               <div>
@@ -110,7 +111,7 @@ const MainLayout: React.FC<MainLayoutProps> = () => {
             <div className="lg:col-span-2">
               <div className="flex items-center gap-3 mb-6">
                 <img
-                  src="/images/logo.jpg"
+                  src={asset('/images/logo.jpg')}
                   alt="Nqobile Primary School"
                   className="h-12 w-auto rounded-lg shadow-sm"
                 />

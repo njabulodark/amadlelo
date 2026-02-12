@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import MetaTags from '../components/MetaTags';
 import ResponsiveImage from '../components/ResponsiveImage';
+import { asset } from '../utils/assetPath';
 import {
     Users,
     Wifi,
@@ -225,7 +226,7 @@ const AboutPage: React.FC = () => {
     /* Student Life gallery */
     const studentImages = Array.from(
         { length: 4 },
-        (_, i) => `/images/students/pic${i + 1}.jpg`
+        (_, i) => asset(`/images/students/pic${i + 1}.jpg`)
     );
 
     const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -464,7 +465,7 @@ const AboutPage: React.FC = () => {
                         <FadeIn className="lg:w-1/2 relative">
                             <div className="relative aspect-[4/5] w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl">
                                 <ProfileImage
-                                    src="images/teachers/principal.jpg"
+                                    src={asset("images/teachers/principal.jpg")}
                                     alt="Principal Mr. N.I. Khanye"
                                     className="w-full h-full object-cover object-top"
                                 />

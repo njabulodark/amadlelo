@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { asset } from '../utils/assetPath';
 import { ChevronLeft, ChevronRight, Tent, Camera } from 'lucide-react';
 
 
 const StudentsPage: React.FC = () => {
   const [bootCampIndex, setBootCampIndex] = useState(0);
-  const bootCampImages = Array.from({ length: 13 }, (_, i) => `/images/students/camp/pic${i + 1}.jpg`);
+  const bootCampImages = Array.from({ length: 13 }, (_, i) => asset(`/images/students/camp/pic${i + 1}.jpg`));
 
   const nextSlide = (setIndex: React.Dispatch<React.SetStateAction<number>>, total: number) => {
     setIndex((prev) => (prev + 1) % total);
@@ -21,7 +22,7 @@ const StudentsPage: React.FC = () => {
       <section
         className="py-16 bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/students/hero.jpg')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${asset('/images/students/hero.jpg')}')`,
           backgroundPosition: 'top',
         }}
       >
@@ -57,7 +58,7 @@ const StudentsPage: React.FC = () => {
             {[1, 2, 3, 4].map((num) => (
               <div className="group relative overflow-hidden rounded-xl shadow-lg h-64 cursor-pointer">
                 <img
-                  src={`/images/students/student${num}.jpg`}
+                  src={asset(`/images/students/student${num}.jpg`)}
                   alt={`Sponsor ${num}`}
                   className="object-cover w-full h-full block transition-transform duration-500 group-hover:scale-110"
                 />

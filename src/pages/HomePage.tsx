@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Target, Music, Dumbbell, BookOpen, Award, ArrowRight, MapPin } from 'lucide-react';
 import ResponsiveImage from '../components/ResponsiveImage';
+import { asset } from '../utils/assetPath';
 
 // --- Utility for Conditional Classes (if lib/utils doesn't exist) ---
 function classNames(...classes: (string | undefined | null | false)[]) {
@@ -91,7 +92,7 @@ const HomePage: React.FC = () => {
         <div className="absolute inset-0 z-0 select-none">
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20 z-10" />
           <ResponsiveImage
-            src="/images/homepage/sacred.jpg"
+            src={asset('/images/homepage/sacred.jpg')}
             alt="Nqobile Primary School Campus"
             className="w-full h-full object-cover scale-105 animate-slow-zoom"
           />
@@ -264,7 +265,7 @@ const HomePage: React.FC = () => {
             <FadeIn className="lg:w-1/2 relative">
               <div className="relative aspect-[4/5] w-full max-w-md mx-auto rounded-2xl overflow-hidden shadow-2xl">
                 <ResponsiveImage
-                  src="/images/homepage/principal.jpg"
+                  src={asset('/images/homepage/principal.jpg')}
                   alt="Mr Ni Khanye"
                   className="w-full h-full object-cover"
                 />
@@ -325,12 +326,12 @@ const HomePage: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "Foundation Phase", desc: "Grades R-3: Building literacy and numeracy in IsiZulu.", img: "/images/homepage/computerlap.jpg" },
-              { title: "Intersen Phase", desc: "Grades 4-7: Transitioning to English medium instruction.", img: "/images/homepage/science.jpg" },
-              { title: "Mathematics", desc: "Dedicated HOD-led stream for building logic.", img: "/images/homepage/maths.jpg" },
-              { title: "Natural Sciences", desc: "Exploring the natural world and technology.", img: "/images/homepage/science.jpg" },
-              { title: "Social Sciences", desc: "History and Geography appropriate for the context.", img: "/images/homepage/humanities.jpg" },
-              { title: "Life Skills", desc: "Creative Arts and personal development.", img: "/images/homepage/drama.jpg" }
+              { title: "Foundation Phase", desc: "Grades R-3: Building literacy and numeracy in IsiZulu.", img: asset("/images/homepage/computerlap.jpg") },
+              { title: "Intersen Phase", desc: "Grades 4-7: Transitioning to English medium instruction.", img: asset("/images/homepage/science.jpg") },
+              { title: "Mathematics", desc: "Dedicated HOD-led stream for building logic.", img: asset("/images/homepage/maths.jpg") },
+              { title: "Natural Sciences", desc: "Exploring the natural world and technology.", img: asset("/images/homepage/science.jpg") },
+              { title: "Social Sciences", desc: "History and Geography appropriate for the context.", img: asset("/images/homepage/humanities.jpg") },
+              { title: "Life Skills", desc: "Creative Arts and personal development.", img: asset("/images/homepage/drama.jpg") }
             ].map((item, i) => (
               <FadeIn key={i} delay={i * 50} className="group cursor-pointer">
                 <div className="relative aspect-video rounded-2xl overflow-hidden mb-4 bg-gray-100">
@@ -390,7 +391,7 @@ const HomePage: React.FC = () => {
 
             <FadeIn delay={200} className="relative h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl">
               <ResponsiveImage
-                src="/images/homepage/soccer.jpg"
+                src={asset('/images/homepage/soccer.jpg')}
                 alt="Students playing"
                 className="w-full h-full object-cover"
               />
